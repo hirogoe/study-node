@@ -2,19 +2,25 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title><%= title %>の遷移をみてみる</title>
+    <title>遷移先をみてみた</title>
     <link rel='stylesheet' href='/css/style.css' />
     <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="/js/mixpanel.js"></script>
   </head>
   <body>
-    <h1><%= title %>の遷移をみてみる</h1>
-    <a href="/next/">次へ</a>
+    <h1>遷移先をみてみた</h1>
+    <ul>
+      <li>
+        <a href="/">戻る</a>
+      </li>
+      <li>
+        <a href="/next/">次へ</a>
+      </li>
   </body>
   <script type="text/javascript">
     $(function(){
       $(document).ready(function() {
-      	mixpanel.lib.track("main");
+      	mixpanel.lib.track("next");
       });
     });
   </script>
