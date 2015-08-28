@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('next', { title: 'Mixpanel' });
+    res.render('step1', { step: 'step1' });
 });
 
 module.exports = router;

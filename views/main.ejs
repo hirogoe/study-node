@@ -2,20 +2,15 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title><%= title %>の遷移をみてみる</title>
+    <title>Toppage</title>
     <link rel='stylesheet' href='/css/style.css' />
-    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="/js/mixpanel.js"></script>
+    <!-- Library Code -->
   </head>
   <body>
-    <h1><%= title %>の遷移をみてみる</h1>
-    <a href="/next/">次へ</a>
+    <h1>Toppage</h1>
+    <a href="/step1/">step1へ</a>
   </body>
   <script type="text/javascript">
-    $(function(){
-      $(document).ready(function() {
-      	mixpanel.lib.track("main");
-      });
-    });
+    <!-- Event Code -->
   </script>
 </html>

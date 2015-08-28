@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Mixpanelの遷移をみてみる</title>
+    <link rel='stylesheet' href='/css/style.css' />
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="/js/mixpanel.js"></script>
+  </head>
+  <body>
+    <h1><%= step %></h1>
+    <ul>
+      <li>
+        <a href="/step4/">次へ</a>
+      </li>
+      <li>
+        <a href="/">離脱</a>
+      </li>
+    </ul>
+  </body>
+  <script type="text/javascript">
+    $(function(){
+      $(document).ready(function() {
+      	mixpanel.lib.track("<%= step %>");
+      });
+    });
+  </script>
+</html>
